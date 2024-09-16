@@ -20,6 +20,10 @@ variable "vpc_id" {
     
 }
 variable "sg_description" {
-    default = ""
+    #default = ""
     type = string
+}
+variable "sg_ingress_rules" {
+  type = list
+  default = []
 }
